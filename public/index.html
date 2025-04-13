@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoom Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔴 Zoom Clone using WebRTC + Firebase</h1>
+
+  <!-- Video Streams -->
+  <div class="video-container">
+    <video id="localVideo" autoplay muted playsinline></video>
+    <div id="remoteVideos"></div>
+  </div>
+
+  <!-- Buttons and Room ID -->
+  <div class="buttons">
+    <button onclick="startCamera()">Start Camera</button>
+    <button onclick="createRoom()">Create Room</button>
+    <input id="roomIdInput" placeholder="Enter Room ID" />
+    <button onclick="joinRoom()">Join Room</button>
+    <!-- Mute/Unmute Button -->
+    <button onclick="toggleMute()">Mute/Unmute</button>
+  </div>
+
+  <!-- Chat Section -->
+  <div class="chat">
+    <h2>Chat</h2>
+    <div id="messages" class="messages"></div>
+    <div class="chat-input">
+      <input id="messageInput" placeholder="Type a message" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- App Script -->
+  <script src="app.js" defer></script>
+</body>
+</html>
