@@ -1,12 +1,12 @@
 // Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyAwxD1TUONMCipU52t6I7tvmwt00hCPrBM",
-  authDomain: "zoom-clone-e3011.firebaseapp.com",
-  projectId: "zoom-clone-e3011",
-  storageBucket: "zoom-clone-e3011.firebasestorage.app",
+  apiKey: "YourAPI",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
   messagingSenderId: "545326282672",
-  appId: "1:545326282672:web:7ea9fe156734e55ba88875"
-};
+  appId: ""
+};//change this using your firebase
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
